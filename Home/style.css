@@ -15,6 +15,19 @@ h3 {
 }
 
 /*////////////////// RECOMENDADOS ////////////////////*/
+.rec-topdiv {
+    display: flex;
+}
+.config-bt {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: auto;
+}
 .recomendations-menu {
     display: flex;
     flex-wrap: wrap;
@@ -101,28 +114,74 @@ h3 {
 
 /* ////////////////////// RODAPE ////////////////////////// */
 footer {
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(40, 40, 40);
     width: 100%;
     height: 15%;
-    /* float: down?; */
     position: fixed;
     bottom: 0;
 }
 
 .player {
     height: 55%;
-    background-color: red;
-    border: 20px;
-    border-color: rgb(80, 80, 80);;
+    border-top: 1px solid rgb(80, 80, 80);
+    border-bottom: 1px solid black;
+    display: flex;
+}
+
+.player img {
+    width: 50px;
+    height: 50px;
+}
+.spans {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+    font-size: 10px;
+    font-weight: 500;
+}
+.spans .artist-txt {
+    color: rgb(190, 190, 190);
+}
+
+.player-bts {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.player-bt {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+
+    background-color: transparent;
+    border: 2px solid white;
 }
 
 .navigation {
     height: 45%;
-    background-color: rgb(132, 0, 255);
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    /*justify needs fix */
 }
 
 .navbt {
-    display: inline;
+    font-size: 9px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+}
+
+.navbt button {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid white;
 }
 /* //////////////////////////////////////////////////////// */
